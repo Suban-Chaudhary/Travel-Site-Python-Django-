@@ -1,0 +1,16 @@
+{% load static %}
+<link rel="stylesheet" href="{% static "css/style1.css" %}">
+
+<nav class="navbar bg-dark">
+    <div class="container">
+        <h1 class="logo lg-heading text-light">WT</h1>
+        <ul class="nav-items">
+            <li class="nav-item"><a href="{% url 'home' %}">Home</a></li>
+            <li class="nav-item"><a href="{% url 'about' %}">About</a></li>
+            <li class="nav-item"><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+{% block content %}
+{% endblock content %}
